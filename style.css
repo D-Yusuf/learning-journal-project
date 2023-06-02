@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: var(--regular);
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+/* Navbar */
+.nav-items{
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 3.3125em;
+}
+.nav-title{
+    display: flex;
+    align-items: center;
+    gap: 4.5px;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-title h1{
+    font-size: 1.275rem;
+} 
+.nav-items ul{
+    display: flex;
+    gap: 15px;
+}
+.nav-items li{
+    font-weight: var(--semibold);
+    list-style-type: none;
+}
+/* Hero image */
+.hero-image{
+    background: url("/images/blog-image-hero.png") no-repeat;
+    height: 488px;
+}
+
+
+:root{
+    /* Font weights */
+    --regular : 400;
+    --semibold : 600;
+    --bold : 700;
+}
