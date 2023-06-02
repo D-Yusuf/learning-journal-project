@@ -1,0 +1,17 @@
+@keyframes blog{
+    0% {transform: translateY(0);}
+    33% {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+}
+
+.blog:hover{
+    cursor: pointer;
+}
+.blog:hover:before{
+    position: absolute;
+    animation: blog 1s ease-in-out infinite;
+    
+    background-color: #333;
+    border-radius: 50%;
+    content: "💡";
+}

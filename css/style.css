@@ -133,15 +133,11 @@ footer p{
 
 /* MEDIA QUERIES */
 @media (min-width: 1081px) {
-    .hero-container{
-        /* background-color: #f; */
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+
   .hero-image{
-    width: inherit;
-  }
+    border-radius: 3px;
+    margin: 0 auto;
+}
   .blogs-container{
     max-width: 1080px;
     margin-left: auto;
