@@ -1,56 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
 *,
 *::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: #333;
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: var(--regular);
+}
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+p{
     font-weight: var(--regular);
 }
-a{
-    text-decoration-line: none;
-    color: inherit;
+.date{
+    text-transform: uppercase;
+}
+.view-more-btn {
+    display: flex;
+    justify-content: center;
+}
+.view-more-btn button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-weight: var(--bold);
+    font-size: 14px;
+
+}
+footer{
+    margin-top: 3em;
+    text-align: center;
+    background-color: #202020;
+    color: #fff;
+    padding: 2em 0;
+}
+footer h1{
+    font-size: 0.75rem;
+    font-weight: var(--bold);
+}
+footer p{
+    font-size: 0.75rem;
 }
 /* Navbar */
-.nav-items{
-    background-color: #FFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5em 3.3125em;
+.nav-items {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 3.3125em;
 }
-.nav-title{
-    display: flex;
-    align-items: center;
-    gap: 4.5px;
-    font-family: 'Roboto', sans-serif;
+.nav-title {
+  display: flex;
+  align-items: center;
+  gap: 4.5px;
+  font-family: "Roboto", sans-serif;
 }
-.nav-title h1{
-    font-size: 1.275rem;
-} 
-.nav-items ul{
-    display: flex;
-    gap: 15px;
+.nav-title h1 {
+  font-size: 1.275rem;
 }
-.nav-items li{
-    font-weight: var(--semibold);
-    list-style-type: none;
+.nav-items ul {
+  display: flex;
+  gap: 15px;
+}
+.nav-items li {
+  font-weight: var(--semibold);
+  list-style-type: none;
+  text-transform: uppercase;
 }
 /* Hero image */
-.hero-image{
-    background: url("/images/blog-image-hero.png") no-repeat;
-    height: 488px;
+/* .hero-container{
+    
+} */
+.hero-image {
+  background: url("/images/blog/blog-image-hero.png") no-repeat center;
+  background-size: cover;
+  max-width: 1085px;
+  height: 488px;
+  max-height: 100%;
+}
+.hero-text {
+  width: 100%;
+  max-width: 780px;
+  height: 100%;
+  color: #fff;
+
+  gap: 9px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-end;
+  padding-left: 3.3125em;
+  padding-right: 4em;
+  padding-bottom: 3.75em;
+}
+.hero-text h1{
+    font-size:  2.5rem;
+    font-weight: var(--bold);
+}
+
+/* Blogs */
+.blogs-container{
+    display: grid;
+    place-items: center;
+    gap: 30px 26px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 3.3125em;
+    padding: 0 3.3125em;
+}
+.blog{
+    max-width: 309px;
+}
+.blog img{
+    border-radius: 3px;
+    margin-bottom: 0.875em;
+}
+.blog h1{
+    margin-bottom: 0.5625em;
+    
+}
+.blog p{
+    margin-bottom: 0.875em;
+    
 }
 
 
-:root{
-    /* Font weights */
-    --regular : 400;
-    --semibold : 600;
-    --bold : 700;
+/* MEDIA QUERIES */
+@media (min-width: 1081px) {
+    .hero-container{
+        /* background-color: #f; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  .hero-image{
+    width: inherit;
+  }
+  .blogs-container{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+
+  }
+}
+/* @media (max-width: 415px) {
+    .hero-container{
+        
+    }
+} */
+
+:root {
+  /* Font weights */
+  --regular: 400;
+  --semibold: 600;
+  --bold: 700;
 }
