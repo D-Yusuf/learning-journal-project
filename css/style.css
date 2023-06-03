@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #fff;
+  background-color:#FAFAFA;
+
   font-family: "Source Sans Pro", sans-serif;
   font-weight: var(--regular);
 }
@@ -49,8 +50,10 @@ footer p{
     font-size: 0.75rem;
 }
 /* Navbar */
-.nav-items {
+nav{
   background-color: #fff;
+}
+.nav-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
