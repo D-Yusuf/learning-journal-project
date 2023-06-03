@@ -10,6 +10,7 @@
 .details{
     display: flex;
     gap: 2em;
+    margin: 0 auto;
 }
 .details img{
     max-width: 132px;
