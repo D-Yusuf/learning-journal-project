@@ -116,9 +116,10 @@ footer p{
 }
 .blog{
     max-width: 309px;
+    border-radius: 3px;
+    
 }
 .blog img{
-    border-radius: 3px;
     margin-bottom: 0.875em;
 }
 .blog h1{
