@@ -14,10 +14,9 @@
     cursor: pointer;
     /* transform: translateY(-3px);
     transition: all 0.5s; */
-
     animation: blog 1s;
     /* filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.25)); */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 .blog:hover:before{
     position: absolute;

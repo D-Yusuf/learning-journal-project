@@ -26,8 +26,10 @@ p{
 .view-more-btn {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
 }
 .view-more-btn button{
+  cursor: pointer;
     border: none;
     background: none;
     text-decoration: underline;
@@ -81,12 +83,13 @@ nav{
 /* .hero-container{
     
 } */
-.hero-image {
+.hero-container {
   background: url("/images/blog/blog-image-hero.png") no-repeat center;
   background-size: cover;
   max-width: 1085px;
   height: 488px;
   max-height: 100%;
+  margin: 0 auto;
 }
 .hero-text {
   width: 100%;
@@ -137,11 +140,24 @@ nav{
 
 /* MEDIA QUERIES */
 @media (min-width: 1081px) {
+  .hero-container{
+    margin-top: 4.375em;
+    background: none;
+    height: fit-content;
+    max-width: 979px;
 
+  }
   .hero-image{
-    border-radius: 3px;
-    margin: 0 auto;
-}
+    background: url("/images/blog/blog-image-hero.png") no-repeat center;
+    background-size: cover;
+    height: 488px;
+    max-height: 100%;
+  }
+  .hero-text{
+    color: black;
+    justify-content: flex-start;
+
+  }
   .blogs-container{
     max-width: 1080px;
     margin-left: auto;
